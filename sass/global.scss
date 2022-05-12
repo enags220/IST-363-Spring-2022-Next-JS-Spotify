@@ -24,20 +24,20 @@ html {
 
 
 body {
-    background-color: orange;
-    color: vars.$SUblue;
+    background-color: vars.$color_light_grey;
+    color: vars.$color_black;
     font-family: vars.$font_primary;
-    min-height:100vh;
+    min-height:100%;
     @include mixins.breakpoint(tablet) {
-        background-color: black;
-        color: red;
+        //background-color: black;
+        //color: red;
     }
     @include mixins.breakpoint(laptop) {
-        background-color: red;
-        color: violet;
+        //background-color: red;
+        //color: violet;
     }
     @include mixins.breakpoint(desktop) {
-        background-color: navy;
-        color: lightblue;
+        //background-color: navy;
+        //color: lightblue;
     }
 }

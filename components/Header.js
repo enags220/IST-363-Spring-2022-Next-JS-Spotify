@@ -26,7 +26,7 @@ const Header = () => {
                 <Col xs='3' sm='3'>
                     <Logo color="white" size={2} />
                 </Col>
-                <Col xs='9' sm='9' textAlign="right">
+                <Col xs='9' sm='9' justifyContent="flex-end" alignItems='flex-end'>
                     <Nav />
                     <ButtonUI 
                         icon="menu" 

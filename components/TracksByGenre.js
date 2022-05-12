@@ -7,12 +7,9 @@ import { getTracks, getGenres, filterTracksByGenre } from '../lib/api'
 
 
 
-const TracksByGenre = () => {
-	const tracks = getTracks();
-	const genres = getGenres();
-	
+const TracksByGenre = ({ items }) => {
     const [activeGenre, setActiveGenre] = useState("Rock");
-
+    const genres = getGenres();
 
     return <div>
         <h2>Top Songs by Genre</h2>
@@ -22,7 +19,7 @@ const TracksByGenre = () => {
             clickHandler={setActiveGenre}
         />
         <Tracks 
-            items={filterTracksByGenre(tracks, activeGenre)}
+            items={filterTracksByGenre(items, activeGenre)}
 		/>
     </div>
 }

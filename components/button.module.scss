@@ -1,3 +1,5 @@
+@use '../sass/abstracts/vars.scss';
+
 .btn {
     background-color: limegreen;
     color: white;
@@ -6,12 +8,14 @@
     font-family: Arial;
     font-weight: bold;
     text-transform: uppercase;
-    margin: .5rem;
+    border-radius: 200px;
+    //margin: .5rem;
     a {
-        color: white;
+        color: vars.$color_black;
+        text-decoration: none;
     }
     &.primary {
-        background-color: limegreen;
+        background-color: vars.$color_primary;
     }
     &.secondary {
         background-color: white;
