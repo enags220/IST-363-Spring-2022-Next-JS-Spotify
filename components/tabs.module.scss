@@ -1,0 +1,21 @@
+.tabs {
+    margin: 0;
+    padding: 0;
+    list-style: none; //remove bullets
+    background-color: white;
+    display: flex;
+    border-bottom: 1px solid black;
+    .tabItem {
+        padding: 1rem;
+        font-family: Arial;
+        font-weight: bold;
+        color: grey;
+        text-transform: uppercase;
+        cursor: pointer;
+        //@warn&:hover {background-color: lightgreen;}
+        &.active {
+            color: black;
+            border-bottom: 3px solid green;
+        } // &.active end
+    } // .tabItem end
+} // .tabs end
