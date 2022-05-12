@@ -24,16 +24,16 @@ const AlbumsPage = ({ albums }) => {
         <Heading level="1">Albums</Heading>
         <Row>
         {albums.map((album, index) =>{
-            const { title, slug, featuredImage } = album;
-            const { src, alt, width, height } = featuredImage;
+            const { title, slug, featuredImage } = album.node;
+            const { sourceUrl, altText, mediaDetails } = featuredImage.node;
             return <Col key={index} xs="6" sm="4">
                 <Image 
-                    src={`/images/${src}`}
-                    alt={alt}
-                    width={width}
-                    height={height}
-                />
-                <Heading level="3">{album.title}</Heading>
+                    src={sourceUrl}
+                    alt={altText}
+                    width={mediaDetails.width}
+                    height={mediaDetails.height}
+                /> 
+                <Heading level="3">{title}</Heading>
                 <Paragraph>
                         <Link href={`/albums/${slug}`}>
                             <a>Read more</a>
