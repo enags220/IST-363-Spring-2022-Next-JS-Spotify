@@ -2,7 +2,7 @@ import Button from './Button';
 import Col from './Col';
 import Container from './Container';
 import Heading from './Heading';
-import Image from 'next/Image';
+import Image from 'next/image';
 import Paragraph from './Paragraph';
 import Row from './Row';
 import Section from './Section';
